@@ -16,15 +16,27 @@ function Education(props) {
             <tr>
               <td>
                 <label>
-                  <input type="text" placeholder="College University*" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="College University*"
+                  />
                 </label>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 <label>
-                  <input type="date" placeholder="dd-mm-yyyy" />
+                  <input
+                    type="date"
+                    class="form-control"
+                    placeholder="dd-mm-yyyy"
+                  />
                 </label>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 <label>
-                  <input type="date" placeholder="dd-mm-yyyy" />
+                  <input
+                    type="date"
+                    class="form-control"
+                    placeholder="dd-mm-yyyy"
+                  />
                 </label>
               </td>
             </tr>
@@ -33,12 +45,17 @@ function Education(props) {
             <tr>
               <td>
                 <label>
-                  <input type="text" placeholder="Qualification*" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Qualification*"
+                  />
                 </label>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 <label>
                   <input
                     className="desc1"
+                    class="form-control"
                     type="text"
                     placeholder="Description*"
                   />
@@ -50,15 +67,27 @@ function Education(props) {
             <tr>
               <td>
                 <label>
-                  <input type="text" placeholder="School*" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="School*"
+                  />
                 </label>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 <label>
-                  <input type="date" placeholder="dd-mm-yyyy" />
+                  <input
+                    type="date"
+                    class="form-control"
+                    placeholder="dd-mm-yyyy"
+                  />
                 </label>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 <label>
-                  <input type="date" placeholder="dd-mm-yyyy" />
+                  <input
+                    type="date"
+                    class="form-control"
+                    placeholder="dd-mm-yyyy"
+                  />
                 </label>
               </td>
             </tr>
@@ -67,12 +96,17 @@ function Education(props) {
             <tr>
               <td>
                 <label>
-                  <input type="text" placeholder="Qualification*" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Qualification*"
+                  />
                 </label>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 <label>
                   <input
-                    className="desc2"
+                    id="desc2"
+                    class="form-control"
                     type="text"
                     placeholder="Description*"
                   />
@@ -84,7 +118,7 @@ function Education(props) {
             <button
               className="back"
               type="submit"
-              class="btn btn-secondary"
+              class="btn btn-dark"
               onClick={prevPage}
             >
               BACK
@@ -100,6 +134,8 @@ function Education(props) {
           </tbody>
         </table>
       </form>
+      <br />
+      <br />
     </div>
   );
 }

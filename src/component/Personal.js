@@ -1,7 +1,5 @@
 import React from "react";
 import "./Resume.css";
-// import EmailIcon from "@material-ui/icons/Email";
-// import PhoneIcon from "@material-ui/icons/Phone";
 
 function Personal(props) {
   const nextPage = () => {
@@ -9,18 +7,27 @@ function Personal(props) {
   };
   return (
     <div align="center">
-      <h2>PERSONAL DETAILS</h2>
-      <form>
-        <table>
+      <h3>PERSONAL DETAILS</h3>
+      <form align="center">
+        <table align="center">
           <tbody>
             <tr>
               <td>
                 <label>
-                  <input type="text" placeholder="FirstName" id="fname" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="FirstName*"
+                    id="fname"
+                  />
                 </label>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 <label>
-                  <input type="text" placeholder="LastName" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="LastName*"
+                  />
                 </label>
               </td>
             </tr>
@@ -31,13 +38,18 @@ function Personal(props) {
                 <label>
                   <input
                     className="email"
+                    class="form-control"
                     type="email"
-                    placeholder="Email Id"
+                    placeholder="Email-Id*"
                   />
-                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 </label>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 <label>
-                  <input type="text" placeholder="Phone Number" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Phone Number"
+                  />
                 </label>
               </td>
             </tr>
@@ -46,11 +58,19 @@ function Personal(props) {
             <tr>
               <td>
                 <label>
-                  <input type="text" placeholder="Your Website" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your Website"
+                  />
                 </label>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 <label>
-                  <input type="text" placeholder="GitHub" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="GitHub"
+                  />
                 </label>
               </td>
             </tr>
@@ -59,11 +79,19 @@ function Personal(props) {
             <tr>
               <td>
                 <label>
-                  <input type="text" placeholder="LinkedIn" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="LinkedIn"
+                  />
                 </label>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 <label>
-                  <input type="text" placeholder="Twitter" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Twitter"
+                  />
                 </label>
               </td>
             </tr>
@@ -72,17 +100,25 @@ function Personal(props) {
             <tr>
               <td>
                 <label>
-                  <input type="text" placeholder="FaceBook" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="FaceBook"
+                  />
                 </label>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 <label>
-                  <input type="text" placeholder="Instagram" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Instagram"
+                  />
                 </label>
               </td>
             </tr>
             <br />
             <br />
-            <button className="back" type="submit">
+            <button className="back" type="submit" class="btn btn-dark">
               BACK
             </button>
             <button
@@ -96,6 +132,8 @@ function Personal(props) {
           </tbody>
         </table>
       </form>
+      <br />
+      <br />
     </div>
   );
 }

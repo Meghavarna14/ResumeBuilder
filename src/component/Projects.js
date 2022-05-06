@@ -9,20 +9,30 @@ function Projects(props) {
   };
   return (
     <div align="center">
-      <h2>EDUCATIONAL DETAILS</h2>
+      <h2>PROJECTS DEVELOPED</h2>
       <h3>PROJECT 1</h3>
-      <form>
-        <table>
+      <form align="center">
+        <table align="center">
           <tbody>
             <tr>
               <td>
                 <label>
-                  <input className="title" type="text" placeholder="Title*" />
+                  <input
+                    className="title"
+                    class="form-control"
+                    type="text"
+                    placeholder="Title*"
+                  />
                 </label>
                 <br />
                 <br />
                 <label>
-                  <input className="link" type="text" placeholder="Link*" />
+                  <input
+                    className="link"
+                    class="form-control"
+                    type="text"
+                    placeholder="Link*"
+                  />
                 </label>
 
                 <br />
@@ -30,6 +40,7 @@ function Projects(props) {
                 <label>
                   <input
                     className="description"
+                    class="form-control"
                     type="text"
                     placeholder="Description*"
                   />
@@ -42,12 +53,22 @@ function Projects(props) {
             <tr>
               <td>
                 <label>
-                  <input className="title" type="text" placeholder="Title*" />
+                  <input
+                    className="title"
+                    class="form-control"
+                    type="text"
+                    placeholder="Title*"
+                  />
                 </label>
                 <br />
                 <br />
                 <label>
-                  <input className="link" type="text" placeholder="Link*" />
+                  <input
+                    className="link"
+                    class="form-control"
+                    type="text"
+                    placeholder="Link*"
+                  />
                 </label>
 
                 <br />
@@ -55,6 +76,7 @@ function Projects(props) {
                 <label>
                   <input
                     className="description"
+                    class="form-control"
                     type="text"
                     placeholder="Description*"
                   />
@@ -66,7 +88,7 @@ function Projects(props) {
             <button
               className="back"
               type="submit"
-              class="btn btn-secondary"
+              class="btn btn-dark"
               onClick={prevPage}
             >
               BACK
@@ -82,6 +104,8 @@ function Projects(props) {
           </tbody>
         </table>
       </form>
+      <br />
+      <br />
     </div>
   );
 }

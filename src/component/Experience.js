@@ -18,15 +18,27 @@ function Experience(props) {
               <td>
                 <h3>EXPERIENCE 1</h3>
                 <label>
-                  <input type="text" placeholder="Institute/Organisation*" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Institute/Organisation*"
+                  />
                 </label>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 <label>
-                  <input type="text" placeholder="Position*" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Position*"
+                  />
                 </label>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 <label>
-                  <input type="text" placeholder="Duration*" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Duration*"
+                  />
                 </label>
               </td>
             </tr>
@@ -37,25 +49,39 @@ function Experience(props) {
                 <label>
                   <input
                     className="desc3"
+                    class="form-control"
                     type="text"
                     placeholder="Description*"
                   />
                 </label>
               </td>
             </tr>
+            <br />
             <h3>EXPERIENCE 2</h3>
             <tr>
               <td>
                 <label>
-                  <input type="text" placeholder="Institute/Organisation*" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Institute/Organisation*"
+                  />
                 </label>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 <label>
-                  <input type="text" placeholder="Position*" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Position*"
+                  />
                 </label>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 <label>
-                  <input type="text" placeholder="Duration*" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Duration*"
+                  />
                 </label>
               </td>
             </tr>
@@ -67,6 +93,7 @@ function Experience(props) {
                   <input
                     className="desc4"
                     type="text"
+                    class="form-control"
                     placeholder="Description*"
                   />
                 </label>
@@ -77,7 +104,7 @@ function Experience(props) {
             <button
               className="back"
               type="submit"
-              class="btn btn-secondary"
+              class="btn btn-dark"
               onClick={prevPage}
             >
               BACK
@@ -93,6 +120,8 @@ function Experience(props) {
           </tbody>
         </table>
       </form>
+      <br />
+      <br />
     </div>
   );
 }

@@ -4,23 +4,26 @@ function Extra(props) {
   const prevPage = () => {
     props.history.push("/Experience");
   };
+
   return (
     <div align="center">
-      <form>
-        <table>
+      <h2>EXTRA DETAILS</h2>
+
+      <form align="center">
+        <table align="center">
           <tr>
             <td>
               <h3>SKILLS/LANGUAGES</h3>
               <label>
-                <input type="text" placeholder="Skill 1" />
+                <input type="text" class="form-control" placeholder="Skill 1" />
               </label>
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               <label>
-                <input type="text" placeholder="Skill 2" />
+                <input type="text" class="form-control" placeholder="Skill 2" />
               </label>
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               <label>
-                <input type="text" placeholder="Skill 3" />
+                <input type="text" class="form-control" placeholder="Skill 3" />
               </label>
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
             </td>
@@ -30,15 +33,15 @@ function Extra(props) {
           <tr>
             <td>
               <label>
-                <input type="text" placeholder="Skill 4" />
+                <input type="text" class="form-control" placeholder="Skill 4" />
               </label>
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               <label>
-                <input type="text" placeholder="Skill 5" />
+                <input type="text" class="form-control" placeholder="Skill 5" />
               </label>
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               <label>
-                <input type="text" placeholder="Skill 6" />
+                <input type="text" class="form-control" placeholder="Skill 6" />
               </label>
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
             </td>
@@ -49,15 +52,27 @@ function Extra(props) {
             <td>
               <h3>INTEREST</h3>
               <label>
-                <input type="text" placeholder="Interest 1" />
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Interest 1"
+                />
               </label>
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               <label>
-                <input type="text" placeholder="Interest 2" />
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Interest 2"
+                />
               </label>
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               <label>
-                <input type="text" placeholder="Interest 3" />
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Interest 3"
+                />
               </label>
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
             </td>
@@ -67,15 +82,27 @@ function Extra(props) {
           <tr>
             <td>
               <label>
-                <input type="text" placeholder="Interest 4" />
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Interest 4"
+                />
               </label>
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               <label>
-                <input type="text" placeholder="Interest 5" />
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Interest 5"
+                />
               </label>
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               <label>
-                <input type="text" placeholder="Interest 6" />
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Interest 6"
+                />
               </label>
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
             </td>
@@ -84,18 +111,20 @@ function Extra(props) {
           <button
             className="back"
             type="submit"
-            class="btn btn-secondary"
+            class="btn btn-dark"
             onClick={prevPage}
           >
             BACK
           </button>
-          <button id="next5" type="submit">
-            NEXT
+          <button id="next5" type="submit" class="btn btn-primary">
+            DOWNLOAD
           </button>
+          <br />
         </table>
       </form>
+      <br />
+      <br />
     </div>
   );
 }
-
 export default Extra;
